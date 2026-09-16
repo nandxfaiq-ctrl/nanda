@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nandaa Mandira Faiq | Student RPL Portfolio</title>
+  <meta name="description" content="Portfolio pribadi Nandaa Mandira Faiq, siswa kelas 11 RPL B di SMK Negeri 1 Tembarak. Menampilkan keahlian programming, proyek web development, Java, Python, dan database.">
+  <meta name="author" content="Nandaa Mandira Faiq">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Nandaa Mandira Faiq | Student RPL Portfolio">
+  <meta property="og:description" content="Website portofolio pribadi siswa SMK RPL: Web Development, Java, Python, dan Database.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts: Poppins & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Accents -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-circle glow-1"></div>
+    <div class="glow-circle glow-2"></div>
+  </div>
+
+  <!-- Subtle Floating Programming Symbols -->
+  <div class="floating-symbols" aria-hidden="true">
+    <div class="code-sym sym-1">&lt;/&gt;</div>
+    <div class="code-sym sym-2">{ code }</div>
+    <div class="code-sym sym-3">public class</div>
+    <div class="code-sym sym-4">def func():</div>
+  </div>
+
+  <!-- =========================================================================
+       1. NAVIGATION (STICKY & RESPONSIVE)
+       ========================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Nandaa Mandira Faiq Home">
+        <span class="logo-badge">&lt;NMF/&gt;</span>
+        <span>Nandaa.dev</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigasi menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         ========================================================================= -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content reveal">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Available for Learning &amp; Collaborations</span>
+            </div>
+            
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+              <span class="gradient-text">Nandaa Mandira Faiq</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span class="hero-role-static">Student RPL | </span>
+              <span id="typewriter" class="typewriter-text">Web &amp; Software Development Enthusiast</span>
+            </div>
+
+            <p class="hero-description">
+              Saya adalah siswa kelas 11 RPL yang sedang mengembangkan kemampuan dalam web development, pemrograman, dan database. Saya senang mempelajari teknologi baru dan membuat berbagai proyek sederhana untuk meningkatkan kemampuan programming.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="btnHeroProjects">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Lihat Proyek</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="btnHeroContact">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Hubungi Saya</span>
+              </a>
+            </div>
+
+            <!-- Quick Metrics / Highlights -->
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <span class="highlight-num">11 RPL</span>
+                <span class="highlight-label">Kelas di SMKN 1 Tembarak</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">6+</span>
+                <span class="highlight-label">Teknologi Dipelajari</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <span class="highlight-label">Proyek Latihan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: Programming Visual (Code Editor Mockup) -->
+          <div class="hero-visual reveal">
+            <div class="hero-code-editor">
+              <div class="editor-header">
+                <div class="editor-controls">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="editor-tab">
+                  <i class="fa-solid fa-code"></i>
+                  <span>DeveloperProfile.java</span>
+                </div>
+                <span style="font-size: 0.75rem; color: var(--text-dim);">UTF-8</span>
+              </div>
+              <pre class="editor-body"><code><span class="token-comment">// Siswa Rekayasa Perangkat Lunak</span>
+<span class="token-keyword">public class</span> <span class="token-class">DeveloperProfile</span> {
+    <span class="token-keyword">public static void</span> <span class="token-prop">main</span>(String[] args) {
+        String nama = <span class="token-string">"Nandaa Mandira Faiq"</span>;
+        String kelas = <span class="token-string">"11 RPL B"</span>;
+        String sekolah = <span class="token-string">"SMK Negeri 1 Tembarak"</span>;
+        
+        String[] passion = {
+            <span class="token-string">"Web Development"</span>,
+            <span class="token-string">"Java Programming"</span>,
+            <span class="token-string">"Database Design"</span>
+        };
+        
+        System.out.<span class="token-prop">println</span>(<span class="token-string">"Halo Dunia! Siap berkreasi!"</span>);
+    }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. ABOUT SECTION
+         ========================================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-regular fa-user"></i>
+            <span>Profil Diri</span>
+          </span>
+          <h2 class="section-title">
+            Tentang <span class="gradient-text">Saya</span>
+          </h2>
+          <p class="section-subtitle">
+            Mengenal lebih dekat latar belakang dan semangat saya dalam dunia rekayasa perangkat lunak.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Photo Frame -->
+          <div class="about-image-wrapper reveal">
+            <div class="image-frame">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Foto Profil Nandaa Mandira Faiq" 
+                class="profile-img" 
+                id="profileImage"
+                loading="lazy"
+              >
+            </div>
+            <div class="about-floating-badge">
+              <div class="badge-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">Status Saat Ini</div>
+                <div class="badge-text-main">Siswa 11 RPL B</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio & Profile Information -->
+          <div class="about-content reveal">
+            <p class="about-intro-text">
+              Saya merupakan siswa SMK Negeri 1 Tembarak jurusan Rekayasa Perangkat Lunak. Saat ini saya berada di kelas 11 RPL B. Saya memiliki ketertarikan terhadap dunia teknologi, khususnya pemrograman, web development, aplikasi sederhana, dan database. Saya terus belajar melalui latihan dan pembuatan berbagai proyek untuk mengembangkan kemampuan saya.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-id-card"></i> Nama Lengkap</span>
+                <span class="info-value">Nandaa Mandira Faiq</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-chalkboard-user"></i> Kelas</span>
+                <span class="info-value">11 RPL B</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-laptop-code"></i> Jurusan</span>
+                <span class="info-value">Rekayasa Perangkat Lunak</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-school"></i> Sekolah</span>
+                <span class="info-value">SMK Negeri 1 Tembarak</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-regular fa-calendar"></i> Tahun Pendidikan</span>
+                <span class="info-value">2024 – 2027</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-regular fa-envelope"></i> Email</span>
+                <span class="info-value">nandafaq04@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SKILLS SECTION
+         ========================================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-code-fork"></i>
+            <span>Keahlian Teknis</span>
+          </span>
+          <h2 class="section-title">
+            Keahlian <span class="gradient-text">Saya</span>
+          </h2>
+          <p class="section-subtitle">
+            Teknologi dan bahasa pemrograman yang sedang saya pelajari dan kembangkan di jurusan RPL.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: HTML -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-level-badge">Intermediate</span>
+            </div>
+            <h3 class="skill-name">HTML</h3>
+            <p class="skill-desc">Digunakan untuk membuat struktur halaman website.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-level-badge">Intermediate</span>
+            </div>
+            <h3 class="skill-name">CSS</h3>
+            <p class="skill-desc">Digunakan untuk membuat tampilan website menjadi menarik dan responsif.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: JavaScript -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-level-badge">Beginner</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Digunakan untuk membuat website lebih interaktif.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Java -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <span class="skill-level-badge">Intermediate</span>
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <p class="skill-desc">Digunakan untuk membuat program dan aplikasi sederhana.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Python -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-level-badge">Beginner</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Digunakan untuk latihan pemrograman dan membuat program sederhana.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Database / SQL -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="skill-level-badge">Beginner</span>
+            </div>
+            <h3 class="skill-name">Database / SQL</h3>
+            <p class="skill-desc">Digunakan untuk mengelola dan menyimpan data.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. PROJECTS SECTION
+         ========================================================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-laptop-file"></i>
+            <span>Karya &amp; Latihan</span>
+          </span>
+          <h2 class="section-title">
+            Proyek <span class="gradient-text">Saya</span>
+          </h2>
+          <p class="section-subtitle">
+            Kumpulan program dan website yang saya kembangkan untuk mempraktikkan materi pembelajaran RPL.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (JavaScript Filtering) -->
+        <div class="projects-filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: Website Sederhana -->
+          <article class="project-card reveal" data-category="html-css javascript">
+            <div class="project-thumb">
+              <img src="assets/projects/project1-web.svg" alt="Preview Website Sederhana" loading="lazy">
+              <span class="project-overlay-badge">HTML / CSS</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Website Sederhana</h3>
+              <p class="project-desc">Website sederhana yang dibuat untuk melatih kemampuan HTML, CSS, dan JavaScript.</p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn-project-view btn-view-project" data-project="project-1" aria-label="Lihat detail Website Sederhana">
+                  <span>View Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <span class="btn-project-status"><i class="fa-solid fa-check"></i> Selesai</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Program Kasir Java -->
+          <article class="project-card reveal" data-category="java">
+            <div class="project-thumb">
+              <img src="assets/projects/project2-kasir.svg" alt="Preview Program Kasir Java" loading="lazy">
+              <span class="project-overlay-badge">Java CLI</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Program Kasir Java</h3>
+              <p class="project-desc">Program kasir sederhana menggunakan Java untuk memproses transaksi dan menghitung total pembayaran.</p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">OOP</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn-project-view btn-view-project" data-project="project-2" aria-label="Lihat detail Program Kasir Java">
+                  <span>View Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <span class="btn-project-status"><i class="fa-solid fa-check"></i> Selesai</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Aplikasi Catatan Harian -->
+          <article class="project-card reveal" data-category="html-css javascript">
+            <div class="project-thumb">
+              <img src="assets/projects/project3-notes.svg" alt="Preview Aplikasi Catatan Harian" loading="lazy">
+              <span class="project-overlay-badge">Web App</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Aplikasi Catatan Harian</h3>
+              <p class="project-desc">Aplikasi sederhana untuk membuat dan mengelola catatan harian.</p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn-project-view btn-view-project" data-project="project-3" aria-label="Lihat detail Aplikasi Catatan Harian">
+                  <span>View Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <span class="btn-project-status"><i class="fa-solid fa-check"></i> Selesai</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Program ATM Sederhana -->
+          <article class="project-card reveal" data-category="java">
+            <div class="project-thumb">
+              <img src="assets/projects/project4-atm.svg" alt="Preview Program ATM Sederhana" loading="lazy">
+              <span class="project-overlay-badge">Java Simulation</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Program ATM Sederhana</h3>
+              <p class="project-desc">Program simulasi ATM sederhana dengan fitur seperti login PIN, cek saldo, tarik tunai, dan informasi transaksi.</p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Algoritma</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn-project-view btn-view-project" data-project="project-4" aria-label="Lihat detail Program ATM Sederhana">
+                  <span>View Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <span class="btn-project-status"><i class="fa-solid fa-check"></i> Selesai</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Game / Animasi JavaScript -->
+          <article class="project-card reveal" data-category="html-css javascript">
+            <div class="project-thumb">
+              <img src="assets/projects/project5-game.svg" alt="Preview Game Animasi JavaScript" loading="lazy">
+              <span class="project-overlay-badge">JS Canvas</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Game / Animasi JavaScript</h3>
+              <p class="project-desc">Proyek interaktif menggunakan JavaScript untuk membuat game atau animasi sederhana.</p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn-project-view btn-view-project" data-project="project-5" aria-label="Lihat detail Game Animasi JavaScript">
+                  <span>View Project</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <span class="btn-project-status"><i class="fa-solid fa-check"></i> Selesai</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. EDUCATION SECTION
+         ========================================================================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Jejak Akademik</span>
+          </span>
+          <h2 class="section-title">
+            Riwayat <span class="gradient-text">Pendidikan</span>
+          </h2>
+          <p class="section-subtitle">
+            Informasi jenjang pendidikan formal yang sedang saya tempuh saat ini.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper reveal">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-date-badge">2024 – 2027 (Aktif)</span>
+              <h3 class="timeline-school">SMK Negeri 1 Tembarak</h3>
+              <p class="timeline-major">Rekayasa Perangkat Lunak (RPL)</p>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+                Mendalami dasar-dasar ilmu komputer, algoritma logika pemrograman, Object-Oriented Programming (OOP), pembuatan website modern menggunakan HTML/CSS/JavaScript, serta pengelolaan basis data relasional.
+              </p>
+              <div class="timeline-details">
+                <div class="timeline-detail-item">
+                  <i class="fa-solid fa-users-rectangle"></i>
+                  <span>Kelas: <strong>11 RPL B</strong></span>
+                </div>
+                <div class="timeline-detail-item">
+                  <i class="fa-solid fa-code"></i>
+                  <span>Kompetensi: <strong>Pengembangan Perangkat Lunak</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CERTIFICATES SECTION
+         ========================================================================= -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-award"></i>
+            <span>Sertifikasi</span>
+          </span>
+          <h2 class="section-title">
+            Daftar <span class="gradient-text">Sertifikat</span>
+          </h2>
+          <p class="section-subtitle">
+            Pencatatan sertifikat kompetensi dan pelatihan yang relevan dengan bidang RPL.
+          </p>
+        </div>
+
+        <div class="certificates-container reveal">
+          <!-- Elegant & Honest Empty State -->
+          <div class="cert-empty-card">
+            <div class="cert-icon-wrap">
+              <i class="fa-regular fa-folder-open"></i>
+            </div>
+            <h3 class="cert-title">Sertifikat</h3>
+            <p class="cert-empty-msg">Belum ada sertifikat yang ditambahkan.</p>
+            <p class="cert-empty-subtext">
+              Bagian ini akan diperbarui ketika saya memperoleh sertifikat baru seiring bertambahnya pelatihan, ujian kompetensi, dan kegiatan sertifikasi keahlian.
+            </p>
+            <span class="cert-badge-status">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span>Status: Dalam Proses Pembelajaran</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. CONTACT SECTION
+         ========================================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Terhubung Bersama</span>
+          </span>
+          <h2 class="section-title">
+            Hubungi <span class="gradient-text">Saya</span>
+          </h2>
+          <p class="section-subtitle">
+            Tertarik untuk berdiskusi, belajar bersama, atau memberikan masukan proyek? Kirimkan pesan melalui form atau email langsung.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Email Card -->
+          <div class="contact-info-card reveal">
+            <h3>Mari Terhubung</h3>
+            <p>
+              Saya sangat terbuka untuk berdiskusi seputar pemrograman, web development, maupun bertukar pengalaman belajar sesama siswa jurusan RPL.
+            </p>
+
+            <div class="contact-direct-item">
+              <div class="contact-icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-direct-meta">
+                <span class="contact-meta-label">Email Utama</span>
+                <span class="contact-meta-val">nandafaq04@gmail.com</span>
+              </div>
+            </div>
+
+            <a href="mailto:nandafaq04@gmail.com" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <span>Send Email</span>
+            </a>
+          </div>
+
+          <!-- Contact Form with JS Validation -->
+          <div class="contact-form-card reveal">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="nameInput" class="form-label">Nama Lengkap</label>
+                <input type="text" id="nameInput" class="form-input" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput" class="form-label">Alamat Email</label>
+                <input type="email" id="emailInput" class="form-input" placeholder="contoh@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Pesan</label>
+                <textarea id="messageInput" class="form-textarea" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btnSubmitForm" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Kirim Pesan</span>
+              </button>
+
+              <!-- Feedback message element -->
+              <div id="formFeedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER & BACK TO TOP
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-name">Nandaa Mandira Faiq</span>
+          <span class="footer-sub">Student RPL • SMK Negeri 1 Tembarak</span>
+        </div>
+        <div class="footer-links" style="display: flex; gap: 16px; font-size: 0.9rem; color: var(--text-muted);">
+          <a href="#home" style="transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color=''">Home</a>
+          <a href="#about" style="transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color=''">About</a>
+          <a href="#skills" style="transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color=''">Skills</a>
+          <a href="#projects" style="transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color=''">Projects</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nandaa Mandira Faiq. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =========================================================================
+       10. PROJECT DETAIL PREVIEW MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="modalProjectTitle">Judul Proyek</h3>
+          <span id="modalProjectCategory" style="font-size: 0.8rem; color: var(--accent); font-family: var(--font-mono);">Kategori</span>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup jendela modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-badge-row">
+          <span class="tech-tag" id="modalProjectStatus" style="color: var(--success); border-color: rgba(52, 211, 153, 0.3);">Status</span>
+        </div>
+        <p class="modal-desc" id="modalProjectDesc">Deskripsi proyek...</p>
+        
+        <div class="modal-highlight-box">
+          <div class="modal-highlight-title">Fitur &amp; Karakteristik:</div>
+          <ul class="modal-features-list" id="modalFeaturesList"></ul>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--primary); margin-bottom: 8px;">Teknologi Digunakan:</div>
+          <div id="modalTechTags" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+        </div>
+
+        <div class="modal-highlight-box" style="margin-bottom: 0;">
+          <div class="modal-highlight-title">Cuplikan Kode / Implementasi:</div>
+          <pre style="margin: 0; background: #0b1120; padding: 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 0.82rem; color: #a5b4fc; overflow-x: auto;"><code id="modalCodeSnippet"></code></pre>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalOkBtn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
